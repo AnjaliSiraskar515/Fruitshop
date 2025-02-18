@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Method</title>
+</head>
+<body>
+    <!-- Declare object -->
+    <script>
+        let obj = {
+            name: "Anjali",
+            "my hobby": "painting",
+            age: "21"
+        };
+
+        // Object.keys(obj) will give all the keys of the object
+        // Object.values(obj) will give all the values of the object
+        console.log(Object.values(obj));
+
+        let obj1 = {};
+        Object.assign(obj1, obj);
+        console.log(obj1);
+    </script>
+</body>
+</html>

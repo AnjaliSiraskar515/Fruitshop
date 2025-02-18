@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Object creation and call</title>
+</head>
+<body>
+     <script>
+     	let obj=
+     	{
+     		name:"Anjali",
+     		"my hobby":"painting",
+     		age:"21",
+
+     		myfunction:function() 
+     		{
+     			console.log("This is function declared inside the object.")
+     		}
+     	}
+
+     	console.log(obj.name);
+     	console.log(obj["my hobby"]);
+          //console.log(obj.my hobby) It will give error/
+     	console.log(obj.age);''
+
+     	//Function call/
+     	obj.myfunction();
+
+     	let obj2=
+     	{
+     		name:"Tanuja",
+            age:"21",
+
+            myInfo:function() 
+            {
+            	console.log(`My name is ${this.name} and age is ${this.age}`)
+            }
+     	}
+     	obj2.myInfo();
+
+
+     	//Second Way to declare an object/
+     	function Person(name1,age1)
+     	{
+     		this.name=name1;
+     		this.age=age1;
+     	}
+     	let person1=new Person("ANjali",20);
+     	let person2=new Person("Arti",20);
+     	console.log(person1.name,person1.age);
+     	console.log(person2.name);
+     	console.log(typeof person1);
+     	console.log(typeof person2);
+     </script>
+</body>
+</html>
